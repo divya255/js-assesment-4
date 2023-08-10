@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger number</title>
+</head>
+<body>
+    <script>
+        var num = 145;
+        var originalnum = num;
+        var sum = 0;
+        while(num > 0){
+            var lastdigit = num % 10;
+            var fact = factorial(lastdigit);
+            sum = sum + fact;
+            num = parseInt(num/10);
+        }
+        if(originalnum == sum){
+            console.log(originalnum+" is strong number");
+        }
+        else {
+            console.log(originalnum+" is strong number");
+        }
+        function factorial (x){
+            var fact = 1;
+            for(var i=1;  i<=x; i++){
+                fact = fact*i;
+            }
+            return fact;
+        }
+    </script>
+</body>
+</html>

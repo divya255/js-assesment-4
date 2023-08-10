@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate power digit sum</title>
+</head>
+<body>
+    <script>
+
+    function calculate( n,  power){
+    sum = 0;
+    value = Math.pow(n, power);
+    while (value != 0) {
+    d = value % 10;
+    sum =sum+ d;
+    bp = Math.floor(value/ 10);
+    }
+    return sum;
+    }
+     n = 5;
+     power = 4;
+    document.write(calculate(n, power));
+      
+    </script>
+</body>
+</html>
